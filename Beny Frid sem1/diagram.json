@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "author": "Beny Frid",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 490.2, "left": 345, "attrs": {} },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 630.4,
+      "left": 773.6,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-ntc-temperature-sensor",
+      "id": "ntc1",
+      "top": 780.2,
+      "left": 393,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "lcd1:GND", "uno:GND.3", "black", [ "h-82.31", "v38.4", "h-171.29" ] ],
+    [ "lcd1:VCC", "uno:5V", "red", [ "h-74.74", "v38.5", "h-197.86" ] ],
+    [ "lcd1:SDA", "uno:A4", "magenta", [ "h-107.17", "v0.2", "h-79.43" ] ],
+    [ "lcd1:SCL", "uno:A5", "yellow", [ "h-48", "v0.3", "h-129.1" ] ],
+    [ "ntc1:GND", "uno:GND.2", "black", [ "v-67.2", "h-13.5" ] ],
+    [ "ntc1:VCC", "uno:VIN", "limegreen", [ "h19.2", "v-134.3" ] ],
+    [ "ntc1:OUT", "uno:A3", "purple", [ "v19.1", "h53.5" ] ]
+  ],
+  "dependencies": {}
+}
