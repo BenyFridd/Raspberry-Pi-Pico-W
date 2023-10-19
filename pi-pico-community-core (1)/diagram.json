@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 20,
+      "left": 60,
+      "attrs": { "env": "arduino-community" }
+    },
+    { "type": "wokwi-led", "id": "led1", "top": 3, "left": 0, "attrs": { "color": "red" } },
+    { "type": "wokwi-led", "id": "led2", "top": 48, "left": 0, "attrs": { "color": "yellow" } },
+    { "type": "wokwi-led", "id": "led3", "top": 98, "left": 0, "attrs": { "color": "green" } },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 111.8,
+      "left": -105.6,
+      "attrs": { "color": "red" }
+    }
+  ],
+  "connections": [
+    [ "pico:GND.1", "led1:C", "black", [] ],
+    [ "pico:GP1", "led1:A", "blue", [] ],
+    [ "pico:GND.2", "led2:C", "black", [] ],
+    [ "pico:GP5", "led2:A", "blue", [] ],
+    [ "pico:GND.3", "led3:C", "black", [] ],
+    [ "pico:GP9", "led3:A", "blue", [] ],
+    [ "$serialMonitor:RX", "pico:GP0", "", [] ],
+    [ "btn1:1.r", "pico:GP15", "blue", [ "v0" ] ],
+    [ "btn1:1.l", "pico:GND.4", "black", [ "v115.2", "h171.6" ] ]
+  ],
+  "dependencies": {}
+}
