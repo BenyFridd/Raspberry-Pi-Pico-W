@@ -1,1 +1,32 @@
 # Raspberry-Pi-Pico-W
+
+
+
+
+### **Manual de Referência do Raspberry Pi Pico W**
+
+O Raspberry Pi Pico W é uma expansão sem fio do Raspberry Pi Pico, incorporando interfaces sem fio adicionais mantendo o mesmo fator de forma compacto. Este componente é especialmente designado para aplicações de Internet das Coisas (IoT) devido à sua capacidade de facilitar a comunicação entre computadores e a internet, além de ser capaz de atuar como um servidor web para controlar saídas digitais e receber dados de sensores.
+
+### **Interfaces de Comunicação:**
+
+1. **WiFi:**
+   - **Padrão:** 802.11n (Banda Única 2.4 GHz).
+   - **Segurança:** WPA3.
+   - **Ponto de Acesso Suave:** Suporta até quatro clientes.
+   - **Configuração:** Facilita a conexão com redes WiFi e a comunicação com a internet.
+
+2. **Bluetooth:**
+   - **Versão:** 5.2.
+   - **Bluetooth Low Energy (LE):** Suporta os papéis Central e Periférico.
+   - **Bluetooth Classic:** Suporte incluído.
+
+3. **Serial Peripheral Interface (SPI):**
+   - **Conexão com Chip Wireless:** A interface sem fio é conectada ao microcontrolador RP2040 via SPI.
+   - **Operação:** A interface geralmente opera a 33MHz.
+   - **Compartilhamento de Pinos:** Alguns pinos são compartilhados devido a limitações de pinos, afetando a disponibilidade de determinadas funções durante as transações SPI.
+
+4. **Interfaces Herdadas do Raspberry Pi Pico:**
+   - **2x SPI:** Permite comunicação serial com outros dispositivos.
+   - **2x I2C:** Interface para comunicação entre circuitos integrados.
+   - **2x UART:** Interface de comunicação assíncrona para transmissão de dados.
+
