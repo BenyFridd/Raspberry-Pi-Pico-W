@@ -29,4 +29,35 @@ O Raspberry Pi Pico W é uma expansão sem fio do Raspberry Pi Pico, incorporand
    - **2x SPI:** Permite comunicação serial com outros dispositivos.
    - **2x I2C:** Interface para comunicação entre circuitos integrados.
    - **2x UART:** Interface de comunicação assíncrona para transmissão de dados.
+  
+
+![alt text](https://user-images.githubusercontent.com/759846/132600686-8341b469-a875-4e41-8ff7-2eb18e07e9da.png))
+
+
+### Conexões:
+1. **LCD:**
+    - `GND` no `GND.3` do Arduino.
+    - `VCC` no `5V` do Arduino.
+    - `SDA` no pino `A4`.
+    - `SCL` no pino `A5`.
+
+2. **Sensor de Temperatura:**
+    - `GND` no `GND.2` do Arduino.
+    - `VCC` no `VIN` do Arduino.
+    - `OUT` no pino `A3`.
+
+### Interfaces de Comunicação:
+1. **LCD:**
+    - Usa I2C, um protocolo para enviar/receber dados. `SDA` para dados, `SCL` para o clock.
+
+2. **Sensor de Temperatura:**
+    - Usa uma entrada analógica. O pino `A3` lê o valor.
+
+### Código:
+- **Início:** 
+    - Liga o LCD e mostra "Hello World".
+
+- **Loop:** 
+    - A cada segundo, mostra a temperatura lida do sensor no LCD.
+
 
