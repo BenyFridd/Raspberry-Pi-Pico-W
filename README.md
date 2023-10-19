@@ -31,7 +31,7 @@ O Raspberry Pi Pico W é uma expansão sem fio do Raspberry Pi Pico, incorporand
    - **2x UART:** Interface de comunicação assíncrona para transmissão de dados.
   
 
-![alt text](https://github.com/BenyFridd/Raspberry-Pi-Pico-W/blob/main/Screenshot%202023-10-19%20172935.png?raw=true))
+![alt text](https://github.com/BenyFridd/Raspberry-Pi-Pico-W/blob/main/Screenshot%202023-10-19%20172935.png?raw=true)
 
 
 ### Conexões:
