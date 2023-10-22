@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "author": "Beny Frid",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-pi-pico",
+      "id": "pico",
+      "top": 121.57,
+      "left": -232.49,
+      "attrs": { "env": "micropython-20220618-v1.19.1" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 140.33,
+      "left": -50.82,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 198.2,
+      "left": -403.2,
+      "attrs": { "color": "green" }
+    }
+  ],
+  "connections": [
+    [ "lcd1:SDA", "pico:GP0", "green", [ "h-62.6", "v139.16", "h-132.68", "v-195.56" ] ],
+    [ "lcd1:SCL", "pico:GP1", "gold", [ "h-52.93", "v136.57", "h-149.95", "v-197.63" ] ],
+    [ "pico:GND.8", "lcd1:GND", "black", [ "h0" ] ],
+    [ "lcd1:VCC", "pico:VBUS", "red", [ "h-62.56", "v-47.38" ] ],
+    [ "btn1:1.r", "pico:GP2", "blue", [ "h19.4", "v-48.08" ] ],
+    [ "pico:GND.1", "btn1:2.r", "black", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
